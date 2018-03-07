@@ -1,0 +1,134 @@
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+  overflow-x: hidden;
+  background: url('../images/bg.jpg') repeat top left;
+}
+
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  color:#F4F4F4 ;
+  margin-bottom: 5px;
+  margin-top: 0;
+
+}
+
+h1
+{
+  font-family: 'Krona One', sans-serif;
+  font-size: 30px;
+  color:#0F5936 ;
+  padding: 70px 50px 20px 70px;
+  font-weight: normal;
+}
+
+h2
+{
+  font-size: 20px;
+  font-family: 'Krona One', sans-serif;
+  color:#F4F4F4;
+  font-weight: normal;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: 3000px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 4000px;
+}
+
+.front
+{
+  z-index: 1000;
+  width: 6000px;
+}
+
+
+
+.page
+{
+   top: 0px;
+   width: 250px;
+   background-color:rgba(15,89,54, 0.6);
+   padding: 10px 30px;
+   position: absolute;
+}
+
+.marsouin
+{
+   left: 410px;
+   top:70px;
+}
+
+.lepilemur
+{
+  left: 1000px;
+  top: -210px;
+  width: 250px;
+}
+
+.rhino
+{
+   width: 250px;
+   left: 1700px;
+}
+
+.saola
+{
+   width: 250px;
+   left: 2800px;
+   top: -150px;
+}
+
+.condor
+{
+  width: 250px;
+  left: 3800px;
+  top: -150px;
+}
+
+.gibbon
+{
+  width: 250px;
+  left: 4700px;
+  top: 80px;
+}
+
+.tortue{
+  width: 250px;
+  left: 5300px;
+  top: -190px;
+}
+
+.option{
+  padding: 100px 30px 30px 30px;
+}

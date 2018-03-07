@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+    <link rel="stylesheet" href="css/example.css" />
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+</head>
+<body>
+	<h1>Les espèces en voie d’extinction</h1>
+
+	<div class="horizon scroll">
+		<img src="images/horizon.png" alt="" />
+	</div>
+	<div class="middle scroll">
+		<img src="images/middle.png" alt="" />
+	</div>
+
+	<div class="front scroll">
+		<img src="images/front.png" alt="" />
+
+
+		<div class="marsouin page">
+			<h2>Le Marsouin du golfe de Californie</h2>
+			<p>
+				30 animaux recensés dans la nature<br>
+				<br>
+			</p><hr style="border:none; border-bottom: 1px #F4F4F4 solid;">
+			<br>
+			<p>Ce mammifère marin est un adepte des balades en solitaire en eaux peu profondes. Il pèse en moyenne quarante-huit kilos et mesure un mètre cinquante de longueur. Aujourd’hui, cette espèce est victime des filets de pêche de crevettes dans lesquels elle se retrouve souvent piégée.</p>
+		</div>
+
+		<div class="lepilemur page">
+			<h2>Le Lepilemur Septentrional</h2>
+			<p>
+				50 animaux recensés dans la nature<br>
+				<br>
+			</p><hr style="border:none; border-bottom: 1px #F4F4F4 solid;">
+			<br>
+			<p>Ce primate de la famille des lémuriens peut mesurer cinquante centimètres et peser environ huit cent grammes. Vivant dans les forêts de l’extrême nord de Madagascar, il est menacé par le braconnage, fréquent dans la région, et par la dégradation de son habitat naturel au profit de l’agriculture.</p>
+		</div>
+
+		<div class="rhino page">
+			<h2>Le Rhinoceros de la Sonde</h2>
+			<p>
+				67 animaux recensés dans la nature<br>
+				<br>
+			</p><hr style="border:none; border-bottom: 1px #F4F4F4 solid;">
+			<br>
+			<p>De nature solitaire, cette espèce de Rhinocéros est la plus rare au monde. Elle vit uniquement en Indonésie, en plaine et forêt tropicale sous la protection d’une unité dédiée. Aujourd’hui, le rhinocéros de la sonde est menacé par sa faible capacité de reproduction et par le braconnage intensif.</p>
+		</div>
+
+		<div class="saola page">
+			<h2>Le Saola</h2>
+			<p>
+				250 animaux recensés dans la nature<br>
+				<br>
+			</p><hr style="border:none; border-bottom: 1px #F4F4F4 solid;">
+			<br>
+			<p>Cet herbivore solitaire et timide mène une existence discrète dans les forêts et montagnes du Viêt Nam et du Laos. Mais il n’en reste pas moins victime du braconnage intensif qui sévit dans la région faisant de lui l’un des seuls gros mammifères en danger critique d’extinction.</p>
+		</div>
+
+		<div class="condor page">
+			<h2>Le Condor de Californie</h2>
+			<p>
+				231 animaux recensés dans la nature<br>
+				<br>
+			</p><hr style="border:none; border-bottom: 1px #F4F4F4 solid;">
+			<br>
+			<p>Le condor de Californie peut se déployer sur près de trois mètres, devenant l’animal volant le plus grand d’Amérique. Sa tête nue est orange/rouge et son plumage est majoritairement noir, avec des taches blanches sous les ailes. Son environnement naturel est menacé par la pollution créée par l’homme.</p>
+		</div>
+
+		<div class="gibbon page">
+			<h2>Le Gibbon de Cao-vit</h2>
+			<p>
+				150 animaux recensés dans la nature<br>
+				<br>
+			</p><hr style="border:none; border-bottom: 1px #F4F4F4 solid;">
+			<br>
+			<p>Sous ce nom énigmatique se cache le singe le plus rare du monde. Pesant entre cinq et dix kilos, le Gibbon de Cao-vit se déplace principalement de branche en branche avec aisance. Il vit dans la forêt située à la frontière de la Chine et du Viêt Nam, où la déforestation réduit son habitat.</p>
+		</div>
+
+		<div class="tortue page">
+			<h2>La Tortue Batagur de Birmanie</h2>
+			<p>
+				40 animaux recensés dans la nature<br>
+				<br>
+			</p><hr style="border:none; border-bottom: 1px #F4F4F4 solid;">
+			<br>
+			<p>Cette tortue d’eau douce aux couleurs vives originaire de Birmanie fait pourtant grise mine. Ses œufs sont récoltés de façon excessive pour la consommation humaine. Ses nids et périodes de reproduction sont prévisibles et favorisent les récoltes par l’homme qui représente le danger numéro un.</p>
+		</div>
+
+
+
+
+	</div>
+
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
+</body>
+</html>
